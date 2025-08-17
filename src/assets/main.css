@@ -1,0 +1,27 @@
+:root {
+    --main-font: 'Source Code Pro', monospace;
+    --main-color: #f8f9fa;
+}
+
+body {
+    background-color: #f8f9fa !important;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #dee2e6; /* grigio Bootstrap */
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
