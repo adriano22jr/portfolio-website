@@ -3,7 +3,7 @@ name: Deploy
 on:
   push:
     branches:
-      - main
+      - tailwind-website
 
 jobs:
   build:
@@ -47,3 +47,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          destination-dir: tailwind-website
+          keep_files: true
