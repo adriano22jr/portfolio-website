@@ -1,37 +1,36 @@
-import { useState } from "react";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import { useState } from 'react'
+import Sidebar from './components/Sidebar';
 import Home from "./components/Home";
 import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Contacts from "./components/Contacts";
-import "./assets/main.css"
+//import Projects from "./components/Projects";
+import './assets/main.css'
 
 function App() {
-    const [activeSection, setActiveSection] = useState("home");
+	const [activeSection, setActiveSection] = useState("home");
+	const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
     const renderSection = () => {
         switch(activeSection){
             case "home": return <Home />;
             case "skills": return <Skills />;
-            case "projects": return <Projects />;
-            case "contacts": return <Contacts />;
+            //case "projects": return <Projects />;
             default: return <Home />;
         }
     };
+	
 
-    return (
-        <>
-            <div style={{ paddingBottom: "60px" }}>
-                <Navbar activeSection = {activeSection} setActiveSection = {setActiveSection} />
-                <div style={{ height: '50px' }}></div> 
-                <div className="container my-4">
-                    {renderSection()}
-                </div>
-                <Footer />
-            </div>
-        </>
-    )
+	return (
+		<div className="flex min-h-screen">
+			<Sidebar activeSection = {activeSection} setActiveSection = {setActiveSection} isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen}/>
+			<main className={`flex-1 w-full min-h-screen transition-all duration-300 ease-in-out ${isSidebarOpen ? "md:ml-80" : "ml-0"}`}>
+				<div className="p-8 pt-24 md:pt-8">
+					<div className="container my-4">
+						{renderSection()}
+					</div>
+				</div>
+			</main>
+		</div>
+	)
 }
 
 export default App;

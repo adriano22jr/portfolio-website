@@ -1,5 +1,3 @@
-import GitHubLanguageChart from "./GitHubLanguageChart";
-
 function Skills() {
     const skillCategories = [
         {
@@ -59,10 +57,6 @@ function Skills() {
                         </div>
                     </div>
                 ))}
-            </div>
-
-            <div className="mt-5">
-                <GitHubLanguageChart />
             </div>
         </div>
     );
