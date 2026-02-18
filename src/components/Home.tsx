@@ -1,10 +1,7 @@
-import profilePhoto from '../assets/pro-pic.jpg';
-
 function Home() {
     return (
         <div className="container my-5">
             <div className="text-center mb-5">
-                <img src={profilePhoto} alt="Profile picture" className="rounded-circle shadow mb-3" style={{ width: "250px", height: "250px", objectFit: "cover" }}/>
                 <h1 className="fw-bold">Hi, I'm <span className="text-primary">Adriano Emanuele Califano</span></h1>
                 <h4 className="text-muted">Computer Science Master's Student • Developer</h4>
                 <p className="mt-3 text-secondary">
