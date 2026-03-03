@@ -1,5 +1,7 @@
-function Skills() {
-    const skillCategories = [
+import SkillCard, { type SkillCategory } from './SkillCard';
+
+export default function Skills() {
+    const skillCategories: SkillCategory[] = [
         {
             category: "Programming Languages",
             skills: ["Python", "TypeScript", "JavaScript", "C", "C++", "Java", "SQL"],
@@ -26,6 +28,11 @@ function Skills() {
             description: "Managing scalable data storage and cloud infrastructure. Experienced with relational systems like PostgreSQL and containerization for consistent deployment environments."
         },
         {
+            category: "CI/CD & Automation",
+            skills: ["GitHub Actions", "GitLab CI/CD", "Azure DevOps", "Jenkins"],
+            description: "Automating software delivery pipelines to ensure rapid and reliable deployments. Experienced in building continuous integration workflows with modern platforms like GitHub Actions and Azure DevOps, alongside foundational knowledge of Jenkins."
+        },
+        {
             category: "Design & Collaboration",
             skills: ["Figma", "Git", "GitHub", "Slack", "Microsoft Teams"],
             description: "Collaborating effectively in professional environments. Using Figma for UI/UX handoff and leveraging modern communication tools to maintain high-velocity team workflows."
@@ -33,45 +40,23 @@ function Skills() {
     ];
 
     return (
-        <div className="container mx-auto px-6 max-w-6xl">
-            {/* Header */}
-            <div className="text-center mb-8 animate-fade-in-down">
+        <div className="container mx-auto px-6 max-w-6xl py-12">
+            <div className="text-center mb-12 animate-fade-in-down">
                 <h2 className="text-4xl font-extrabold mb-4 tracking-tight">
                     <span className="bg-clip-text text-zinc-900">Technical Skills & Expertise</span>
                 </h2>
-                <p className="text-lg text-gray-600 mx-auto leading-relaxed">
+                <p className="text-lg text-gray-600 mx-auto leading-relaxed max-w-2xl">
                     Here’s an overview of my technical skills and tools I regularly work with. They cover programming, cloud computing, data analysis, and development tools.
                 </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
                 {skillCategories.map((cat, index) => (
-                    <div 
+                    <SkillCard 
                         key={index} 
-                        className="group bg-white border border-gray-100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-fade-in-up"
-                        style={{ animationDelay: `${index * 150}ms`, animationFillMode: 'both' }}
-                    >
-                        <div className="mb-2">
-                            <h5 className="text-xl font-bold text-zinc-900 group-hover:text-blue-600 transition-colors">
-                                {cat.category}
-                            </h5>
-                        </div>
-
-                        <div className="flex flex-wrap gap-2 mb-6">
-                            {cat.skills.map((skill, idx) => (
-                                <span 
-                                    key={idx} 
-                                    className="bg-blue-50 text-blue-700 text-xs font-semibold px-3 py-1 rounded-md border border-blue-100"
-                                >
-                                    {skill}
-                                </span>
-                            ))}
-                        </div>
-                        
-                        <p className="text-sm text-gray-500 leading-relaxed border-t border-gray-50 pt-4">
-                            {cat.description}
-                        </p>
-                    </div>
+                        cat={cat} 
+                        index={index} 
+                    />
                 ))}
             </div>
 
@@ -81,18 +66,16 @@ function Skills() {
                     to { opacity: 1; transform: translateY(0); }
                 }
                 @keyframes fadeInDown {
-                    from { opacity: 0; transform: translateY(-20px); }
+                    from { opacity: 0; transform: translateY(-10px); }
                     to { opacity: 1; transform: translateY(0); }
                 }
                 .animate-fade-in-up {
                     animation: fadeInUp 0.6s ease-out;
                 }
                 .animate-fade-in-down {
-                    animation: fadeInDown 0.6s ease-out;
+                    animation: fadeInDown 0.3s ease-out;
                 }
             `}</style>
         </div>
     );
 }
-
-export default Skills;

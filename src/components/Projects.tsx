@@ -5,13 +5,13 @@ function Projects() {
         {
             name: "Serverless Crawling on Dark Web",
             description: "Design, development and deployment of a serverless crawler on Microsoft Azure cloud platform, designed to extract and process data from dark web pages.",
-            technologies: ["Python", "Azure Functions", "Durable Functions", "Azure Storage", "Cosmos DB", "Tor", "Docker"],
+            technologies: ["Python", "Azure Durable Functions", "Azure Storage", "Azure Container Registry", "Azure Cosmos DB", "Azure SQL", "Azure VNet", "Azure App Service", "Tor", "Docker"],
             link: "https://github.com/adriano22jr/crator-web"
         },
         {
             name: "Classical-Quantum NLP",
             description: "Development of classical and quantum binary classiﬁcation models for non-functional requirements with Lambeq python library.",
-            technologies: ["scikit-learn", "Lambeq", "Qiskit", "NumPy", "Pandas"],
+            technologies: ["Python", "scikit-learn", "Lambeq", "Qiskit", "NumPy", "Pandas", "Docker"],
             link: "https://github.com/adriano22jr/Tesi-Quantum-NLP"
         },
         {
@@ -23,19 +23,19 @@ function Projects() {
         {
             name: "MedGraph",
             description: "Project focused on applying knowledge graphs to the domain of biomedical literature, leveraging Named Entity Recognition (NER) to identify and classify entities mentioned in paper abstracts.",
-            technologies: ["Python", "spaCy", "scikit-learn", "NetworkX", "Neo4j", "Matplotlib", "Hugging Face"],
+            technologies: ["Python", "spaCy", "scikit-learn", "NetworkX", "Neo4j", "Matplotlib", "Hugging Face", "Flask"],
             link: "https://github.com/adriano22jr/MedGraph"
         },
         {
             name: "Light-Field Compression",
             description: "Comparative analysis between traditional data compression techniques with Principal Component Analysis, Singular Value Decomposition and CNNs applied in the context of LightField Images.",
-            technologies: ["NumPy", "scikit-learn", "TensorFlow/Keras", "OpenCV", "Matplotlib"],
+            technologies: ["NumPy", "scikit-learn", "TensorFlow/Keras", "OpenCV", "Matplotlib", "Docker"],
             link: "https://github.com/adriano22jr/light-field-compression"
         },
         {
             name: "Graph pagerank analysis",
             description: "Design and development of a tool for constructing knowledge graphs from paper citations, incorporating PageRank analysis.",
-            technologies: ["NetworkX", "Pandas", "Matplotlib"],
+            technologies: ["NetworkX", "Pandas", "Matplotlib", "Docker", "BeautyfulSoup4", "Flask"],
             link: "https://github.com/adriano22jr/graph-pagerank-analysis"
         },
         {
@@ -49,6 +49,12 @@ function Projects() {
             description: "An open-source tool that detects data issues using rule-based techniques, enhancing reporting, integrating quality metrics, and tracking dataset changes over time.",
             technologies: ["Pandas", "SQLAlchemy", "Django", "Docker"],
             link: "https://github.com/CpDant/DSD-plus"
+        },
+        {
+            name: "SYCL-Bench (DPCTL Integration)",
+            description: "Integration and testing of DPCTL Python library on SYCL Benchmark Suite.",
+            technologies: ["Python", "C++", "SYCL", "dpctl", "pybind11", "IntelONE API"],
+            link: "https://github.com/adriano22jr/sycl-bench"
         }
     ];
 
@@ -63,7 +69,6 @@ function Projects() {
                 </p>
             </div>
 
-            {/* Grid - 3 colonne come in Skills */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {projects.map((project, index) => (
                     <div 
@@ -71,9 +76,6 @@ function Projects() {
                         className="animate-fade-in-up"
                         style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'both' }}
                     >
-                        {/* Passiamo le props a ProjectCard. 
-                           Assicurati che ProjectCard usi le classi Tailwind per uniformità 
-                        */}
                         <ProjectCard 
                             projectName={project.name} 
                             projectDescription={project.description} 
@@ -84,7 +86,6 @@ function Projects() {
                 ))}
             </div>
 
-            {/* Inclusione degli stessi keyframes per coerenza */}
             <style>{`
                 @keyframes fadeInUp {
                     from { opacity: 0; transform: translateY(20px); }
