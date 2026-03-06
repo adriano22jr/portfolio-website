@@ -1,124 +1,115 @@
-import profilePhoto from '../images/pro-pic.jpg';
-
 function Home() {
     return (
-        <div className="container my-5">
-            <div className="text-center mb-5">
-                <img src={profilePhoto} alt="Profile picture" className="rounded-circle shadow mb-3" style={{ width: "250px", height: "250px", objectFit: "cover" }}/>
-                <h1 className="fw-bold">Hi, I'm <span className="text-primary">Adriano Emanuele Califano</span></h1>
-                <h4 className="text-muted">Computer Science Master's Student • Developer</h4>
-                <p className="mt-3 text-secondary">
-                    I specialize in <strong>cloud computing</strong> and <strong>serverless architectures</strong>, and I also develop and work with <strong>AI models</strong>.<br />I’m currently working on a mix of personal and academic projects. Feel free to explore my portfolio!
-                </p>
-            </div>
+        <div className="bg-[#fafafa] text-slate-900 font-sans selection:bg-blue-100">
+            <div className="max-w-5xl mx-auto px-8 py-24">
+                <header className="border-b border-slate-200 pb-16 mb-16">
+                    <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
+                        Adriano Emanuele Califano
+                    </h1>
+                    <p className="mt-4 text-xl text-blue-600 font-medium">
+                        Cloud Systems & Distributed Architectures
+                    </p>
+                    <p className="mt-4 text-lg text-slate-600 leading-relaxed">
+                        <strong className="text-slate-900">MSc Computer Science graduate</strong> specializing in the design of high-availability distributed systems. 
+                        I have a deep focus on <span className="text-slate-900 font-medium">Cloud and Serverless Computing</span>, 
+                        leveraging <strong>Microsoft Azure</strong> for project deployment. My expertise includes 
+                        concurrent and parallel programming, data security, and performance optimization 
+                        through advanced algorithms and high-performance computing techniques.
+                    </p>
+                </header>
 
-            <div className="mb-5">
-                <h2 className="fw-bold mb-3 text-center">🙋 About Me</h2>
-                <p className="lead text-center text-secondary mx-auto">
-                    I'm a passionate Computer Science student with a strong interest in <strong>cloud technologies</strong>, 
-                    <strong> serverless architectures</strong>, and <strong>AI models</strong>.  
-                    Beyond academics, I enjoy building creative projects, exploring new technologies, and continuously challenging myself.  
-                    I believe in combining technical expertise with creativity to make a real impact and to combine several disciplines of computer science in order to solve complex problems, particularly in the realm of AI and cloud computing.
-                </p>
-            </div>
+                <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
+                    <div className="md:col-span-8 space-y-16"> 
+                        <section>
+                            <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-slate-400 mb-8">Education & Research</h2>
+                            <div className="space-y-10">
+                                <div className="relative pl-8 border-l border-slate-200">
+                                    <span className="absolute -left-1.25 top-1 w-2.25 h-2.25 bg-blue-600 rounded-full"></span>
+                                    <div className="flex justify-between items-start flex-wrap gap-2">
+                                        <h3 className="text-xl font-bold italic">MSc in Computer Science (Cloud Computing)</h3>
+                                        <span className="font-mono text-sm bg-slate-100 px-2 py-1 rounded">2023 — 2026</span>
+                                    </div>
+                                    <p className="text-slate-700 mt-1 font-medium">Final Grade: 106/110 cum laude</p>
+                                    <p className="text-slate-500 mt-2 text-sm">
+                                        Solid foundation in software engineering, database management, and operating systems.
+                                    </p>
+                                </div>
 
-            <div className="mb-5">
-                <h2 className="fw-bold mb-4 text-center">📚 Education</h2>
-                <div className="timeline position-relative ms-4">
+                                <div className="relative pl-8 border-l border-slate-200">
+                                    <span className="absolute -left-1.25 top-1 w-2.25 h-2.25 bg-blue-600 rounded-full"></span>
+                                    <div className="flex justify-between items-start flex-wrap gap-2">
+                                        <h3 className="text-xl font-bold italic">Erasmus Traineeship+ (Thesis Research)</h3>
+                                        <span className="font-mono text-sm bg-slate-100 px-2 py-1 rounded">2025</span>
+                                    </div>
+                                    <p className="text-slate-700 mt-1 text-sm font-semibold">JADS — 's-Hertogenbosch, Netherlands</p>
+                                    <p className="text-slate-500 mt-3 text-sm leading-relaxed">
+                                        Erasmus project carried out as an extracurricular activity for the completion of the master's thesis project. The project focused on the design and implementation of a serverless cloud architecture for dark web crawling.
+                                    </p>
+                                </div>
 
-                    <div className="timeline-item mb-4 position-relative">
-                        <div className="timeline-dot bg-success"></div>
-                        <div className="timeline-content ps-4">
-                            <h5 className="fw-bold">BSc in Computer Science</h5>
-                            <p className="text-muted mb-1">Università degli Studi di Salerno — <em>Sept 2020 - Oct 2023</em></p>
-                            <p>Focus on algorithms, databases, web development, operating systems, software engineering and development methodologies.</p>
-                            <p><strong>Final Grade: </strong> 110/110 cum laude</p>
-                        </div>
+                                <div className="relative pl-8 border-l border-slate-200">
+                                    <span className="absolute -left-1.25 top-1 w-2.25 h-2.25 bg-blue-600 rounded-full"></span>
+                                    <div className="flex justify-between items-start flex-wrap gap-2">
+                                        <h3 className="text-xl font-bold italic">BSc in Computer Science</h3>
+                                        <span className="font-mono text-sm bg-slate-100 px-2 py-1 rounded">2020 — 2023</span>
+                                    </div>
+                                    <p className="text-slate-700 mt-1 font-medium">Final Grade: 110/110 cum laude</p>
+                                    <p className="text-slate-500 mt-2 text-sm">
+                                        Solid foundation in software engineering, database management, and operating systems.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </section>
+
+                        <section>
+                            <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-slate-400 mb-8">Engineering Focus</h2>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div className="p-6 bg-white border border-slate-200 rounded-sm hover:border-blue-400 transition-colors shadow-sm">
+                                    <h4 className="font-bold text-slate-900 mb-2">Cloud-Native Architectures</h4>
+                                    <p className="text-sm text-slate-500 leading-relaxed">Designing resilient systems on Azure with a focus on high availability and scalability.</p>
+                                </div>
+                                <div className="p-6 bg-white border border-slate-200 rounded-sm hover:border-blue-400 transition-colors shadow-sm">
+                                    <h4 className="font-bold text-slate-900 mb-2">System Optimization</h4>
+                                    <p className="text-sm text-slate-500 leading-relaxed">Leveraging parallel programming and compression algorithms to maximize resource efficiency.</p>
+                                </div>
+                            </div>
+                        </section>
                     </div>
 
-                    <div className="timeline-item mb-4 position-relative">
-                        <div className="timeline-dot bg-primary"></div>
-                        <div className="timeline-content ps-4">
-                            <h5 className="fw-bold">MSc in Computer Science - Cloud Computing</h5>
-                            <p className="text-muted mb-1">Università degli Studi di Salerno — <em>Oct 2023 - Present</em></p>
-                            <p>Specializing in cloud computing, AI models and other technologies.</p>
-                        </div>
-                    </div>
-
-                    <div className="timeline-item mb-4 position-relative">
-                        <div className="timeline-dot bg-warning"></div>
-                        <div className="timeline-content ps-4">
-                            <h5 className="fw-bold">Erasmus Traineeship+</h5>
-                            <p className="text-muted mb-1">Jheronimus Academy of Data Science, 's-Hertogenbosch — <em>Mar 2025 - Jun 2025</em></p>
-                            <p>Erasmus project carried out as an extracurricular activity for the completion of the master's thesis project.</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div className="mb-5 text-center">
-                <h2 className="fw-bold mb-4">🗣 Language Skills</h2>
-                <div className="d-flex justify-content-center gap-5 flex-wrap">
-
-                    <div>
-                        <h5 className="fw-bold mb-1">Italian</h5>
-                        <p className="text-muted mb-0"><em>Mother tongue</em></p>
-                    </div>
-
-                    <div>
-                        <h5 className="fw-bold mb-1">English</h5>
-                        <p className="text-muted mb-1">FCE Certificate — B2 level (Score: 168)</p>
-                    </div>
-                </div>
-            </div>
-
-            <div className="mb-5">
-                <h2 className="fw-bold mb-3 text-center">✨ Technology & Research</h2>
-                <p className="text-secondary text-center mx-auto" style={{ maxWidth: "800px" }}>
-                    My academic path led me to explore the intersection between <strong>cloud computing</strong> and <strong>data science</strong>.  
-                    I'm fascinated by the possibilities of <strong>serverless architectures</strong> and how distributed systems can be designed 
-                    to operate efficiently at scale. I enjoy experimenting with <strong>crawlers</strong>, <strong>knowledge graphs</strong>, 
-                    and applying <strong>machine learning</strong> to real-world problems.
-                </p>
-            </div>
-
-            <div className="mb-5">
-                <h2 className="fw-bold mb-3 text-center">🎶 Creativity & Personal Growth</h2>
-                <p className="text-secondary text-center mx-auto" style={{ maxWidth: "800px" }}>
-                    Outside the academic and professional world, I find balance through <strong>music</strong> and <strong>sports</strong>.  
-                    Playing guitar and piano helps me channel creativity, while volleyball keeps me grounded in teamwork and discipline.  
-                    These passions shape not only my personal growth but also my approach to problem-solving in technology.
-                </p>
-            </div>
-
-            <div className="mb-5">
-                <h2 className="fw-bold mb-3 text-center">🌍 My Interests</h2>
-                <div className="row text-center">
-                    <div className="col-md-4 mb-3">
-                        <div className="card h-100 shadow-sm">
-                            <div className="card-body">
-                                <h5 className="card-title">💻 Technology</h5>
-                                <p className="card-text">I'm passionate about technology in general, especially in pc/console hardware and software.</p>
+                    <aside className="md:col-span-4 space-y-12">
+                        <div>
+                            <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-slate-400 mb-6">Technical Stack</h2>
+                            <div className="space-y-6">
+                                <div>
+                                    <p className="text-xs font-mono text-blue-600 mb-1">// Cloud & Distributed</p>
+                                    <p className="text-sm text-slate-700 font-medium tracking-tight">
+                                        Microsoft Azure, Serverless Computing, Distributed Systems, IoT Cloud Integration
+                                    </p>
+                                </div>
+                                <div>
+                                    <p className="text-xs font-mono text-blue-600 mb-1">// Parallel & Performance</p>
+                                    <p className="text-sm text-slate-700 font-medium tracking-tight">
+                                        Concurrent Programming, HPC, Data Compression, Advanced Algorithms
+                                    </p>
+                                </div>
+                                <div>
+                                    <p className="text-xs font-mono text-blue-600 mb-1">// Backend & AI Engineering</p>
+                                    <p className="text-sm text-slate-700 font-medium tracking-tight">
+                                        Node.js, Python, Data Security, ML Model Integration
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="col-md-4 mb-3">
-                        <div className="card h-100 shadow-sm">
-                            <div className="card-body">
-                                <h5 className="card-title">🎮 Gaming</h5>
-                                <p className="card-text">I enjoy playing video games of various genres, with a particular focus on soulslike games, sport and story-driven ones.</p>
-                            </div>
+
+                        <div className="pt-8 border-t border-slate-200">
+                            <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-slate-400 mb-4">Interests</h2>
+                            <p className="text-sm text-slate-600 leading-relaxed">
+                                Music (Guitar & Piano) and competitive volleyball. 
+                                Disciplines that shape my focus on precision and collaborative system performance.
+                            </p>
                         </div>
-                    </div>
-                    <div className="col-md-4 mb-3">
-                        <div className="card h-100 shadow-sm">
-                            <div className="card-body">
-                                <h5 className="card-title">🏐 Sports</h5>
-                                <p className="card-text">Volleyball enthusiast, which I practice regularly to stay active and competitive.</p>
-                            </div>
-                        </div>
-                    </div>
+                    </aside>
                 </div>
             </div>
         </div>
