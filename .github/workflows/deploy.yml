@@ -3,7 +3,7 @@ name: Deploy Tailwind UI
 on:
   push:
     branches:
-      - tailwind-website
+      - main
 
 # Permessi necessari per scrivere sul branch gh-pages
 permissions:
