@@ -29,9 +29,9 @@ function Home() {
                                         <h3 className="text-xl font-bold italic">MSc in Computer Science (Cloud Computing)</h3>
                                         <span className="font-mono text-sm bg-slate-100 px-2 py-1 rounded">2023 — 2026</span>
                                     </div>
-                                    <p className="text-slate-700 mt-1 font-medium">Final Grade: 106/110 cum laude</p>
+                                    <p className="text-slate-700 mt-1 font-medium">Final Grade: 110/110 cum laude</p>
                                     <p className="text-slate-500 mt-2 text-sm">
-                                        Solid foundation in software engineering, database management, and operating systems.
+                                        Advanced studies in cloud computing, distributed systems, and software engineering. Focused on designing scalable serverless architectures and cloud-native applications. Master's thesis on a serverless dark web crawler deployed on Microsoft Azure.
                                     </p>
                                 </div>
 
@@ -55,7 +55,7 @@ function Home() {
                                     </div>
                                     <p className="text-slate-700 mt-1 font-medium">Final Grade: 110/110 cum laude</p>
                                     <p className="text-slate-500 mt-2 text-sm">
-                                        Solid foundation in software engineering, database management, and operating systems.
+                                        Strong foundation in algorithms, software engineering, and data management. Thesis on the application of NLP and quantum NLP techniques for classification of security requirements.
                                     </p>
                                 </div>
 
