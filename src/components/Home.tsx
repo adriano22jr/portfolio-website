@@ -21,6 +21,22 @@ function Home() {
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
                     <div className="md:col-span-8 space-y-16"> 
                         <section>
+                            <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-slate-400 mb-8">Work Experience</h2>
+                            <div className="space-y-10">
+                                <div className="relative pl-8 border-l border-slate-200">
+                                    <span className="absolute -left-1.25 top-1 w-2.25 h-2.25 bg-blue-600 rounded-full"></span>
+                                    <div className="flex justify-between items-start flex-wrap gap-2">
+                                        <h3 className="text-xl font-bold italic">Software Developer</h3>
+                                        <span className="font-mono text-sm bg-slate-100 px-2 py-1 rounded">2025 — Ongoing</span>
+                                    </div>
+                                    <p className="text-slate-700 mt-1 text-sm font-semibold">ITSvil srl — Via Antonio Amato 26, 84131 Salerno (Italy)</p>
+                                    <p className="text-slate-500 mt-2 text-sm">
+                                       Hands-on experience building and deploying end-to-end systems and microservices using <strong>Java Spring Boot</strong>, <strong>React</strong>, and <strong>Node.js</strong>. Actively involved in the deployment lifecycle, utilizing <strong>CI/CD pipelines</strong> with <strong>Jenkins</strong> and managing container orchestration (<strong>Docker/Kubernetes</strong>) via <strong>Rancher</strong>.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
                             <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-slate-400 mb-8">Education & Research</h2>
                             <div className="space-y-10">
                                 <div className="relative pl-8 border-l border-slate-200">
@@ -41,7 +57,7 @@ function Home() {
                                         <h3 className="text-xl font-bold italic">Erasmus Traineeship+ (Thesis Research)</h3>
                                         <span className="font-mono text-sm bg-slate-100 px-2 py-1 rounded">2025</span>
                                     </div>
-                                    <p className="text-slate-700 mt-1 text-sm font-semibold">JADS — 's-Hertogenbosch, Netherlands</p>
+                                    <p className="text-slate-700 mt-1 text-sm font-semibold">JADS - Sint Janssingel 92, 5211 DA 's-Hertogenbosch (Netherlands)</p>
                                     <p className="text-slate-500 mt-3 text-sm leading-relaxed">
                                         Erasmus project carried out as an extracurricular activity for the completion of the master's thesis project. The project focused on the design and implementation of a serverless cloud architecture for dark web crawling.
                                     </p>

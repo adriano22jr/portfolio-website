@@ -1,5 +1,5 @@
 import { Mail, Github, Linkedin, ChevronRight, ArrowDownToLine, PanelLeftClose, PanelRightClose } from "lucide-react";
-import curriculum  from "../assets/cv.pdf";
+import curriculum  from "../assets/curriculum.pdf";
 import profile_photo from "../assets/pro-pic.jpg";
 import "../assets/main.css"
 

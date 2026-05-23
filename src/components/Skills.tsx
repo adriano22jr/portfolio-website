@@ -29,7 +29,7 @@ export default function Skills() {
         },
         {
             category: "CI/CD & Automation",
-            skills: ["GitHub Actions", "GitLab CI/CD", "Azure DevOps", "Jenkins"],
+            skills: ["GitHub Actions", "GitLab CI/CD", "Azure DevOps", "Jenkins", "Rancher", "Docker"],
             description: "Automating software delivery pipelines to ensure rapid and reliable deployments. Experienced in building continuous integration workflows with modern platforms like GitHub Actions and Azure DevOps, alongside foundational knowledge of Jenkins."
         },
         {
