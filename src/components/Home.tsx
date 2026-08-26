@@ -1,20 +1,20 @@
 function Home() {
     return (
-        <div className="bg-[#fafafa] text-slate-900 font-sans selection:bg-blue-100">
-            <div className="max-w-5xl mx-auto px-8 py-24">
+        <div className="text-slate-900 font-sans selection:bg-blue-100">
+            <div className="max-w-8xl mx-auto px-8 py-12">
                 <header className="border-b border-slate-200 pb-16 mb-16">
                     <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
                         Adriano Emanuele Califano
                     </h1>
                     <p className="mt-4 text-xl text-blue-600 font-medium">
-                        Cloud Systems & Distributed Architectures
+                        Software and Cloud Engineer
                     </p>
                     <p className="mt-4 text-lg text-slate-600 leading-relaxed">
-                        <strong className="text-slate-900">MSc Computer Science graduate</strong> specializing in the design of high-availability distributed systems. 
+                        <strong className="text-slate-900">MSc Computer Science graduate </strong> specializing in the design of high-availability distributed systems. 
                         I have a deep focus on <span className="text-slate-900 font-medium">Cloud and Serverless Computing</span>, 
-                        leveraging <strong>Microsoft Azure</strong> for project deployment. My expertise includes 
-                        concurrent and parallel programming, data security, and performance optimization 
-                        through advanced algorithms and high-performance computing techniques.
+                        leveraging <strong>Microsoft Azure</strong> to design and deploy end-to-end systems and microservices, from serverless crawlers to containerized architectures orchestrated with <strong>Docker</strong> and <strong>Kubernetes</strong>. 
+                        Alongside this, I bring hands-on experience in <span className="text-slate-900 font-medium">AI and Machine Learning</span>, having built <strong>PyTorch</strong>- and <strong>TensorFlow</strong>-based solutions for knowledge graphs, NLP/QNLP classification and biomedical entity recognition. 
+                        My background also spans concurrent and parallel programming, data security, and performance optimization through advanced algorithms and high-performance computing techniques.
                     </p>
                 </header>
 
@@ -47,7 +47,7 @@ function Home() {
                                     </div>
                                     <p className="text-slate-700 mt-1 font-medium">Final Grade: 110/110 cum laude</p>
                                     <p className="text-slate-500 mt-2 text-sm">
-                                        Advanced studies in cloud computing, distributed systems, and software engineering. Focused on designing scalable serverless architectures and cloud-native applications. Master's thesis on a serverless dark web crawler deployed on Microsoft Azure.
+                                        Advanced studies in cloud computing, distributed systems, and software engineering, with coursework extending into machine learning and AI. Focused on designing scalable serverless architectures and cloud-native applications that leverage AI-driven components — from knowledge graphs to NLP pipelines. Master's thesis on a serverless dark web crawler deployed on Microsoft Azure, combining cloud-native design with data extraction and processing at scale.
                                     </p>
                                 </div>
 
@@ -89,6 +89,10 @@ function Home() {
                                     <h4 className="font-bold text-slate-900 mb-2">System Optimization</h4>
                                     <p className="text-sm text-slate-500 leading-relaxed">Leveraging parallel programming and compression algorithms to maximize resource efficiency.</p>
                                 </div>
+                                <div className="p-6 bg-white border border-slate-200 rounded-sm hover:border-blue-400 transition-colors shadow-sm">
+                                    <h4 className="font-bold text-slate-900 mb-2">Machine Learning & Deep Learning</h4>
+                                    <p className="text-sm text-slate-500 leading-relaxed">Building PyTorch and TensorFlow models for classification, entity recognition, and knowledge graph extraction.</p>
+                                </div>
                             </div>
                         </section>
                     </div>
@@ -100,7 +104,7 @@ function Home() {
                                 <div>
                                     <p className="text-xs font-mono text-blue-600 mb-1">// Cloud & Distributed</p>
                                     <p className="text-sm text-slate-700 font-medium tracking-tight">
-                                        Microsoft Azure, Serverless Computing, Distributed Systems, IoT Cloud Integration
+                                        Microsoft Azure, Serverless Computing, Distributed Systems
                                     </p>
                                 </div>
                                 <div>
@@ -112,7 +116,13 @@ function Home() {
                                 <div>
                                     <p className="text-xs font-mono text-blue-600 mb-1">// Backend & AI Engineering</p>
                                     <p className="text-sm text-slate-700 font-medium tracking-tight">
-                                        Node.js, Python, Data Security, ML Model Integration
+                                        Java, Python, Data Analysis, ML Model Integration
+                                    </p>
+                                </div>
+                                <div>
+                                    <p className="text-xs font-mono text-blue-600 mb-1">// Microservices & API</p>
+                                    <p className="text-sm text-slate-700 font-medium tracking-tight">
+                                        Java Spring, FastAPI, Flask, GraphQL 
                                     </p>
                                 </div>
                             </div>

@@ -54,7 +54,7 @@ function Sidebar({activeSection, setActiveSection, isOpen, setIsOpen}: Props) {
                 <div className="flex flex-col items-center justify-center">
                     <img src={profile_photo} alt="Profile picture" className="w-27.5 h-27.5 mt-3 mb-3 rounded-full object-cover"/>
                     <span className="text-lg font-medium text-white">Adriano Emanuele Califano</span>
-                    <span className="text-sm font-normal text-zinc-400">Software Developer</span>
+                    <span className="text-sm font-normal text-zinc-400">Software and Cloud Engineer</span>
                 </div>
                 
                 <nav className="flex flex-col border-t border-b border-zinc-800">
